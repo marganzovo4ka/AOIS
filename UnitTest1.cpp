@@ -100,5 +100,13 @@ namespace UnitTest1
 			c = a.Sum(b);
 			Assert::IsTrue(37.369998931884766 == c.BinaryToFloat());
 		}
+		TEST_METHOD(TestMethod12)
+		{
+			FloatBinaryNum a(14.23);
+			FloatBinaryNum b(23.14);
+			FloatBinaryNum c;
+			c = a.Sum(b);
+			Assert::IsTrue(37.369998931884766 == c.BinaryToFloat());
+		}
 	};
 }
