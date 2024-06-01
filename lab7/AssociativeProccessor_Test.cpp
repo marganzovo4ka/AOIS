@@ -62,7 +62,12 @@ namespace UnitTest1
 			x.Sort();
 			Assert::IsTrue(x.GetWord(0) == "0000000000100001");
 			Assert::IsTrue(x.GetWord(15) == "1111111111011101");
+		}
 
+		TEST_METHOD(TestMethod7)
+		{
+			AssociativeProccessor x;
+			Assert::IsTrue(x.AddressColumn(0) == "1000100010010010");
 		}
 		
 	};
